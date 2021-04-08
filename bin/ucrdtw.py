@@ -15,5 +15,5 @@ if __name__ == '__main__':
 
     data = numpy.fromfile(args.data, sep=' ')
     query = numpy.fromfile(args.query, sep=' ', count=args.query_size if args.query_size > 0 else -1)
-    print _ucrdtw.ucrdtw(data, query, args.warp_width, True)
+    print(_ucrdtw.ucrdtw(data, query, args.warp_width, True))
 
